@@ -63,7 +63,7 @@ export default function AboutSection() {
                   <Card className="border-primary/20 shadow-sm hover:shadow-md transition-all">
                     <CardContent className="flex flex-col items-center p-4">
                       <span className="text-3xl font-bold text-primary">
-                        5+
+                        4+
                       </span>
                       <span className="text-sm text-muted-foreground">
                         Years Experience
@@ -77,7 +77,7 @@ export default function AboutSection() {
                   <Card className="border-primary/20 shadow-sm hover:shadow-md transition-all">
                     <CardContent className="flex flex-col items-center p-4">
                       <span className="text-3xl font-bold text-primary">
-                        50+
+                        8+
                       </span>
                       <span className="text-sm text-muted-foreground">
                         Projects Completed
