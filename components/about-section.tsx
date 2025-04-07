@@ -53,7 +53,7 @@ export default function AboutSection() {
               transition={{ duration: 0.7, delay: 0.2 }}
             >
               <h3 className="text-2xl font-bold">Who I Am</h3>
-              <p className="break-keep mt-4 text-muted-foreground">
+              <p className="mt-4 text-muted-foreground">
                 웹 퍼블리싱 기반을 다진 프론트엔드 개발자 입니다 프로젝트의
                 기획부터 유지보수 단계까지 다수 참여한 이력이 있습니다 현재
                 정보처리기사 필기 합격, 실기 준비중입니다

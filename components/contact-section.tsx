@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
-import { Mail, MapPin, Phone } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { motion } from "framer-motion"
+import { Mail, MapPin, Phone } from "lucide-react";
+// import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+// import { Input } from "@/components/ui/input";
+// import { Label } from "@/components/ui/label";
+// import { Textarea } from "@/components/ui/textarea";
+import { motion } from "framer-motion";
 
 export default function ContactSection() {
   const container = {
@@ -17,15 +17,18 @@ export default function ContactSection() {
         staggerChildren: 0.1,
       },
     },
-  }
+  };
 
   const item = {
     hidden: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-  }
+  };
 
   return (
-    <section id="contact" className="bg-background py-16 md:py-24 relative overflow-hidden">
+    <section
+      id="contact"
+      className="bg-background py-16 md:py-24 relative overflow-hidden"
+    >
       {/* Decorative background elements */}
       <div className="absolute bottom-0 right-0 w-full h-1/3 bg-gradient-to-t from-primary/5 to-transparent -z-10" />
 
@@ -38,7 +41,7 @@ export default function ContactSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
-            Get In Touch
+            Contact
           </motion.h2>
           <motion.p
             className="mx-auto mt-4 max-w-[700px] text-center text-muted-foreground"
@@ -47,7 +50,8 @@ export default function ContactSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.1 }}
           >
-            Have a project in mind or want to collaborate? Feel free to reach out to me.
+            프로젝트를 염두에 두고 있거나 협력하고 싶으신가요? 언제든지 저에게
+            연락해 주세요.
           </motion.p>
           <motion.div
             className="mt-12 grid gap-8 md:grid-cols-3"
@@ -61,45 +65,48 @@ export default function ContactSection() {
                 icon: <Mail className="h-6 w-6 text-primary" />,
                 title: "Email",
                 description: "Feel free to email me for any inquiries.",
-                contact: "contact@example.com",
-                href: "mailto:contact@example.com",
+                contact: "gimb52043@gmail.com",
+                href: "mailto:gimb52043@gmail.com",
               },
               {
                 icon: <Phone className="h-6 w-6 text-primary" />,
                 title: "Phone",
-                description: "Available for calls during business hours.",
-                contact: "+1 (234) 567-890",
-                href: "tel:+1234567890",
+                description: "Feel free to call me for any inquiries.",
+                contact: "010-3395-2934",
+                href: "tel:010-3395-2934",
               },
               {
                 icon: <MapPin className="h-6 w-6 text-primary" />,
                 title: "Location",
-                description: "Based in Seoul, South Korea.",
-                contact: "Available for remote work",
-                href: null,
+                description: "Based in Busan, South Korea.",
+                contact: "부산 수영구 연수로392번가길 36",
+                href: "https://map.naver.com/p/entry/place/1529345262?placePath=%252Fhome%253Fentry%253Dplt&searchType=place&lng=129.1116318&lat=35.1660606",
               },
-            ].map((item, index) => (
+            ].map((contactItem, index) => (
               <motion.div key={index} variants={item}>
-                <Card className="border-primary/10 hover:border-primary/30 hover:shadow-md transition-all">
-                  <CardContent className="flex flex-col items-center p-6">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                      {item.icon}
-                    </div>
-                    <h3 className="mt-4 text-xl font-bold">{item.title}</h3>
-                    <p className="mt-2 text-center text-muted-foreground">{item.description}</p>
-                    {item.href ? (
-                      <a href={item.href} className="mt-4 text-primary hover:underline">
-                        {item.contact}
-                      </a>
-                    ) : (
-                      <span className="mt-4 text-primary">{item.contact}</span>
-                    )}
-                  </CardContent>
-                </Card>
+                <a href={contactItem.href} className="mt-4 text-primary">
+                  <Card className="border-primary/10 hover:border-primary/30 hover:shadow-md transition-all">
+                    <CardContent className="flex flex-col items-center p-6">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                        {contactItem.icon}
+                      </div>
+                      <h3 className="mt-4 text-xl font-bold">
+                        {contactItem.title}
+                      </h3>
+                      <p className="mt-2 text-center text-muted-foreground">
+                        {contactItem.description}
+                      </p>
+
+                      <span className="mt-4 text-primary">
+                        {contactItem.contact}
+                      </span>
+                    </CardContent>
+                  </Card>
+                </a>
               </motion.div>
             ))}
           </motion.div>
-          <motion.div
+          {/* <motion.div
             className="mt-12"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -154,10 +161,9 @@ export default function ContactSection() {
                 </form>
               </CardContent>
             </Card>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>
-  )
+  );
 }
-

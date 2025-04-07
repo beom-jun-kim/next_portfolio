@@ -25,7 +25,7 @@ export default function NewsSection() {
     },
     {
       id: 3,
-      title: "부산TP, 스마트 헬스케어로 시민 건강·안전 선도",
+      title: "스마트 헬스케어로 시민 건강·안전 선도",
       date: "2024.11.27",
       description:
         "지난 26일 사상구 다누림센터에서 지콘스페이스 오픈식과 5개 협력기관의 상호협력 업무협약을 체결했다고 밝혔다...",
@@ -88,7 +88,7 @@ export default function NewsSection() {
                   rel="noopener noreferrer"
                 >
                   <Card className="overflow-hidden transition-all border-primary/10 hover:border-primary/30">
-                    <CardContent className="p-6 break-keep">
+                    <CardContent className="p-6">
                       <div className="flex items-center gap-2 text-sm text-primary">
                         <Calendar className="h-4 w-4" />
                         <span>{newsItem.date}</span>
@@ -100,7 +100,7 @@ export default function NewsSection() {
                         {newsItem.description}
                       </p>
                     </CardContent>
-                    <CardFooter className="p-6 pt-0 ml-auto gap-1 text-primary">
+                    <CardFooter className="justify-end p-6 pt-0 ml-auto gap-1 text-primary">
                       Read More <ArrowUpRight className="h-4 w-4" />
                     </CardFooter>
                   </Card>

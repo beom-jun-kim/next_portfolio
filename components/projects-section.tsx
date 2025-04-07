@@ -142,7 +142,7 @@ export default function ProjectsSection() {
     {
       id: 6,
       title: "Nawriter",
-      description: "ai 기사 자동 생성 프로그램",
+      description: "AI 기사 자동 생성 프로그램",
       image: "/placeholder.svg?height=400&width=600",
       tags: [
         "Frontend",
@@ -151,8 +151,15 @@ export default function ProjectsSection() {
         "react-cookie",
         "react-i18next",
       ],
-      link: "#",
-      features: ["AI 기사 CRUD", "관리자", "다국어 지원"],
+      link: "http://www.nawriter.co.kr/",
+      features: [
+        "AI 기사 생성",
+        "첨부자료 찾기",
+        "요약하기",
+        "MyNews",
+        "관리자",
+        "다국어 지원",
+      ],
       duration: "2024.05 - 2020.06",
       contribution: "30%",
       screenshots: [
@@ -322,7 +329,7 @@ export default function ProjectsSection() {
                             <h3 className="text-xl font-bold">
                               {project.title}
                             </h3>
-                            <p className="mt-2 break-keep text-muted-foreground">
+                            <p className="mt-2 text-muted-foreground">
                               {project.description}
                             </p>
                             <div className="mt-4 flex flex-wrap gap-2">
@@ -429,7 +436,7 @@ export default function ProjectsSection() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <h3 className="text-lg font-semibold mb-2">추가한 기능</h3>
-                  <ul className="list-disc break-keep pl-5 space-y-1">
+                  <ul className="list-disc pl-5 space-y-1">
                     {selectedProject.features.map((feature, index) => (
                       <li key={index}>{feature}</li>
                     ))}

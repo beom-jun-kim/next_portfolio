@@ -83,7 +83,7 @@ export default function SkillsSection() {
             My Skills
           </motion.h2>
           <motion.p
-            className="break-keep mx-auto mt-4 max-w-[700px] text-center text-muted-foreground"
+            className="mx-auto mt-4 max-w-[700px] text-center text-muted-foreground"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -106,7 +106,7 @@ export default function SkillsSection() {
                       <div className="rounded-full p-3">{skill.icon}</div>
                       <div>
                         <h3 className="text-xl font-bold mb-1">{skill.name}</h3>
-                        <p className="text-sm break-keep text-muted-foreground">{skill.description}</p>
+                        <p className="text-sm text-muted-foreground">{skill.description}</p>
                       </div>
                     </div>
                     <div className="mt-4 w-full h-2 bg-muted rounded-full overflow-hidden">

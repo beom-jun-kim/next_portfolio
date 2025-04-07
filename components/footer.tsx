@@ -29,9 +29,7 @@ export default function Footer() {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             {[
-              // { icon: <Twitter className="h-5 w-5" />, href: "https://twitter.com", label: "Twitter" },
               { icon: <Github className="h-5 w-5" />, href: "https://github.com/beom-jun-kim", label: "GitHub" },
-              // { icon: <Linkedin className="h-5 w-5" />, href: "https://linkedin.com", label: "LinkedIn" },
             ].map((item, index) => (
               <motion.div key={index} whileHover={{ y: -5, transition: { duration: 0.2 } }}>
                 <Link
