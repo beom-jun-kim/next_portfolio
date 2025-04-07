@@ -33,7 +33,7 @@ export default function HeroSection() {
           </motion.span>
         </motion.h1>
         <motion.p
-          className="mt-4 max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+          className="mt-4 max-w-[700px] text-muted-foreground"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.7 }}
