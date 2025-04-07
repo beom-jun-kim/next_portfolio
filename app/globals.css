@@ -1,3 +1,5 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -49,16 +51,14 @@
   }
 }
 
-body {
-  word-break: keep-all
-}
-
 @layer base {
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
+    word-break: keep-all;
+    font-family: "Spoqa Han Sans Neo", "sans-serif";
   }
 }
 
@@ -80,10 +80,13 @@ body {
   inset: 0;
   border-radius: inherit;
   padding: 2px;
-  background: linear-gradient(to right, hsl(var(--primary)), hsl(263, 70%, 60%));
+  background: linear-gradient(
+    to right,
+    hsl(var(--primary)),
+    hsl(263, 70%, 60%)
+  );
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   pointer-events: none;
 }
-
