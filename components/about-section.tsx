@@ -86,6 +86,7 @@ export default function AboutSection() {
                   },
                 ].map((item, index) => (
                   <Link
+                    key={index}
                     href={item.href}
                     target="_blank"
                     rel="noopener noreferrer"
