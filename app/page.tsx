@@ -9,6 +9,7 @@ import HeroSection from "@/components/hero-section"
 import NewsSection from "@/components/news-section"
 import ProjectsSection from "@/components/projects-section"
 import SkillsSection from "@/components/skills-section"
+import CareerSection from "@/components/career-section"
 
 export default function Home() {
   // Add smooth scrolling for all anchor links
@@ -35,6 +36,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <AboutSection />
+        <CareerSection />
         <ProjectsSection />
         <SkillsSection />
         <NewsSection />

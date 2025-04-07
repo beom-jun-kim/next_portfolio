@@ -258,30 +258,27 @@ export default function ProjectsSection() {
 
       <div className="container px-4 md:px-6">
         <div className="mx-auto max-w-6xl">
-          <div className="flex flex-col items-center justify-between gap-4 md:flex-row mb-12">
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
-            >
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl gradient-text">
-                My Projects
-              </h2>
-              <p className="mt-4 max-w-[600px] text-muted-foreground">
-                웹/앱 프로젝트 작업 모음입니다.
-              </p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
-            ></motion.div>
-          </div>
+          <motion.h2
+            className="text-center text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl gradient-text"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+          >
+            My Projects
+          </motion.h2>
+          <motion.p
+            className="mx-auto mt-4 max-w-[700px] text-center text-muted-foreground"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+          >
+            웹/앱 프로젝트 작업 모음입니다.
+          </motion.p>
 
           {/* Carousel container with navigation buttons */}
-          <div className="relative w-full">
+          <div className="mt-12 relative w-full">
             {/* Previous button */}
             <Button
               variant="outline"
