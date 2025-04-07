@@ -29,16 +29,16 @@ export default function Footer() {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             {[
-              { icon: <Twitter className="h-5 w-5" />, href: "https://twitter.com", label: "Twitter" },
-              { icon: <Github className="h-5 w-5" />, href: "https://github.com", label: "GitHub" },
-              { icon: <Linkedin className="h-5 w-5" />, href: "https://linkedin.com", label: "LinkedIn" },
+              // { icon: <Twitter className="h-5 w-5" />, href: "https://twitter.com", label: "Twitter" },
+              { icon: <Github className="h-5 w-5" />, href: "https://github.com/beom-jun-kim", label: "GitHub" },
+              // { icon: <Linkedin className="h-5 w-5" />, href: "https://linkedin.com", label: "LinkedIn" },
             ].map((item, index) => (
               <motion.div key={index} whileHover={{ y: -5, transition: { duration: 0.2 } }}>
                 <Link
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full p-2 text-muted-foreground transition-colors hover:bg-primary/10 hover:text-primary"
+                  className="rounded-full p-2 text-muted-foreground transition-colors hover:text-primary"
                 >
                   {item.icon}
                   <span className="sr-only">{item.label}</span>

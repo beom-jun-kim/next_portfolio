@@ -25,7 +25,7 @@ export default function ProjectsSection() {
         "next-intl",
         "zod",
       ],
-      link: "#",
+      link: "https://soolab.co.kr/",
       features: [
         "실시간 경매 시스템 (등록, 참여, 낙찰, 취소)",
         "다국어 지원",
@@ -77,7 +77,7 @@ export default function ProjectsSection() {
       description: "IOT기반 스마트 신발 적용 사회적 약자 지원 서비스",
       image: "/placeholder.svg?height=400&width=600",
       tags: ["Frontend", "React Native", "Vue.js"],
-      link: "#",
+      link: "https://www.smartshoes.kr/",
       features: [
         "위치 추적",
         "알림 시스템",
@@ -101,7 +101,7 @@ export default function ProjectsSection() {
       description: "사회적 약자 실종 및 배회감지를 위한 관제 서비스",
       image: "/placeholder.svg?height=400&width=600",
       tags: ["Frontend", "Vue.js", "Vuetify"],
-      link: "#",
+      link: "https://www.shoeshub.kr/",
       features: [
         "인상착의로 찾기 (CCTV선택, 지역, 성별, 연령대, 옷 색상 등)",
         "이미지로 찾기",
@@ -166,7 +166,7 @@ export default function ProjectsSection() {
       description: "자전거 의류 쇼핑몰",
       image: "/placeholder.svg?height=400&width=600",
       tags: ["publishing", "html", "CSS", "JavaScript", "jQuery"],
-      link: "#",
+      link: "https://mcnsports.co.kr/",
       features: [
         "전체 페이지 리뉴얼",
         "모바일 지원 (적응형)",
@@ -186,7 +186,7 @@ export default function ProjectsSection() {
       description: "남성 스포츠 의류 쇼핑몰",
       image: "/placeholder.svg?height=400&width=600",
       tags: ["publishing", "html", "CSS", "JavaScript", "jQuery"],
-      link: "#",
+      link: "https://mcnfit.co.kr/",
       features: [
         "전체 페이지 리뉴얼",
         "모바일 지원 (적응형)",
@@ -401,12 +401,29 @@ export default function ProjectsSection() {
                   className="object-cover"
                 />
               </div>
-
-              <div>
-                <h2 className="text-2xl font-bold">{selectedProject.title}</h2>
-                <p className="mt-2 text-muted-foreground">
-                  {selectedProject.description}
-                </p>
+              <div className="flex flex-col md:flex-row items-start justify-between gap-4">
+                <div>
+                  <h2 className="text-2xl font-bold">
+                    {selectedProject.title}
+                  </h2>
+                  <p className="mt-2 text-muted-foreground">
+                    {selectedProject.description}
+                  </p>
+                </div>
+                {selectedProject.link !== "#" && (
+                  <a
+                    href={selectedProject.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button
+                      variant="outline"
+                      className="rounded-full border-primary/50 text-primary hover:bg-primary/10 hover:text-primary"
+                    >
+                      View Site
+                    </Button>
+                  </a>
+                )}
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
