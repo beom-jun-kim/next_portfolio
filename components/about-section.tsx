@@ -59,7 +59,7 @@ export default function AboutSection() {
                 정보처리기사 필기 합격, 실기 준비중입니다
               </p>
               <div className="mt-6 grid grid-cols-2 gap-4">
-                <Card className="border-primary/20 shadow-sm shadow-md">
+                <Card className="border-primary/30">
                   <CardContent className="flex flex-col items-center p-4">
                     <span className="text-3xl font-bold text-primary">4+</span>
                     <span className="text-sm text-muted-foreground">
@@ -68,7 +68,7 @@ export default function AboutSection() {
                   </CardContent>
                 </Card>
 
-                <Card className="border-primary/20 shadow-sm shadow-md">
+                <Card className="border-primary/30">
                   <CardContent className="flex flex-col items-center p-4">
                     <span className="text-3xl font-bold text-primary">8+</span>
                     <span className="text-sm text-muted-foreground">

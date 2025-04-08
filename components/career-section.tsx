@@ -81,8 +81,8 @@ export default function CareerSection() {
           >
             {careers.map((career, index) => (
               <motion.div key={index} variants={item}>
-                <Card className="overflow-hidden border-muted hover:border-muted/80 hover:shadow-md transition-all">
-                  <CardContent className="p-6">
+                <Card className="overflow-hidden shadow-md border-primary/30">
+                  <CardContent className="p-6 md:p-8">
                     <div className="flex flex-col md:flex-row md:items-start gap-4">
                       <div className="flex items-center gap-2 text-sm mt-1 text-muted-foreground md:mb-0">
                         <Calendar className="h-4 w-4" />

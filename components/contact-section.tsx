@@ -43,16 +43,15 @@ export default function ContactSection() {
           >
             Contact
           </motion.h2>
-          <motion.p
+            <motion.p
             className="mx-auto mt-4 max-w-[700px] text-center text-muted-foreground"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.1 }}
-          >
-            프로젝트를 염두에 두고 있거나 협력하고 싶으신가요? 언제든지 저에게
-            연락해 주세요.
-          </motion.p>
+            >
+            이메일, 전화 또는 아래의 연락처를 통해 편하게 소통할 수 있습니다.
+            </motion.p>
           <motion.div
             className="mt-12 grid gap-8 md:grid-cols-3"
             variants={container}

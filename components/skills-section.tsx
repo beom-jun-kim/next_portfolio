@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
-import { Braces, FileCode2, Code2, Database, GitBranch, Trello } from "lucide-react"
 import Nextjs from "@/public/icons/nextjs.svg"
 import Vuejs from "@/public/icons/vuejs.svg"
 import Typescript from "@/public/icons/typescript.svg"
@@ -15,7 +14,7 @@ export default function SkillsSection() {
     {
       icon: <img src={Nextjs.src} alt="Next.js" className="h-14 w-20" />,
       name: "Next.js",
-      level: 75,
+      level: 70,
       description: "서버사이드 렌더링 React 애플리케이션 개발",
     },
     {
@@ -27,7 +26,7 @@ export default function SkillsSection() {
     {
       icon: <img src={Typescript.src} alt="Typescript" className="h-14 w-20" />,
       name: "TypeScript",
-      level: 75,
+      level: 70,
       description: "TypeScript를 사용한 타입 안전 JavaScript 개발",
     },
     {
@@ -39,13 +38,13 @@ export default function SkillsSection() {
     {
       icon: <img src={Jira.src} alt="Jira" className="h-14 w-20" />,
       name: "Jira",
-      level: 70,
+      level: 75,
       description: "Jira를 통한 프로젝트 관리 및 이슈 추적",
     },
     {
       icon: <img src={Confluence.src} alt="Confluence" className="h-14 w-20" />,
       name: "Confluence",
-      level: 70,
+      level: 80,
       description: "Confluence를 활용한 문서 작성 및 지식 공유",
     },
   ]
@@ -100,7 +99,7 @@ export default function SkillsSection() {
           >
             {skills.map((skill, index) => (
               <motion.div key={index} variants={item}>
-                <Card className="overflow-hidden border-primary/10 border-primary/30">
+                <Card className="overflow-hidden border-primary/30">
                   <CardContent className="p-6">
                     <div className="mb-4 flex items-center gap-4">
                       <div className="rounded-full p-3">{skill.icon}</div>
