@@ -79,7 +79,7 @@ export default function ProjectsSection() {
       id: 3,
       title: "G-CON",
       description: "IOT기반 스마트 신발 적용 사회적 약자 지원 서비스",
-      image: "/images/gcon/main.png",
+      image: "/images/gcon/main02.png",
       tags: ["Frontend", "React Native", "Vue.js"],
       link: "https://www.smartshoes.kr/",
       features: [
