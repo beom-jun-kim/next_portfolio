@@ -15,7 +15,7 @@ export default function ProjectsSection() {
       id: 1,
       title: "Market Soo",
       description: "수산물 판매 · 경매 사이트",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/soo/main.png",
       tags: [
         "Frontend",
         "Next.js",
@@ -39,16 +39,16 @@ export default function ProjectsSection() {
       duration: "2024.11 - 2024.12",
       contribution: "60%",
       screenshots: [
-        "/placeholder.svg?height=400&width=600",
-        "/placeholder.svg?height=400&width=600",
-        "/placeholder.svg?height=400&width=600",
+        // "/images/soo/1.png",
+        // "/images/soo/2.png",
+        "/images/soo/3.png",
       ],
     },
     {
       id: 2,
       title: "사업계획서 완성 프로그램",
       description: "창업 멘토링 및 비즈니스 모델 설계 플랫폼",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/bmds/main.png",
       tags: [
         "Frontend",
         "Next.js",
@@ -67,15 +67,19 @@ export default function ProjectsSection() {
       duration: "2024.02 - 2024.04",
       contribution: "70%",
       screenshots: [
-        "/placeholder.svg?height=400&width=600",
-        "/placeholder.svg?height=400&width=600",
+        "/images/bmds/1.png",
+        "/images/bmds/2.png",
+        "/images/bmds/3.png",
+        "/images/bmds/4.png",
+        "/images/bmds/5.png",
+        "/images/bmds/6.png",
       ],
     },
     {
       id: 3,
       title: "G-CON",
       description: "IOT기반 스마트 신발 적용 사회적 약자 지원 서비스",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/gcon/main.png",
       tags: ["Frontend", "React Native", "Vue.js"],
       link: "https://www.smartshoes.kr/",
       features: [
@@ -91,15 +95,19 @@ export default function ProjectsSection() {
       duration: "2024.06 - 2024.08",
       contribution: "90%",
       screenshots: [
-        "/placeholder.svg?height=400&width=600",
-        "/placeholder.svg?height=400&width=600",
+        "/images/gcon/1.png",
+        "/images/gcon/2.png",
+        "/images/gcon/3.png",
+        "/images/gcon/4.png",
+        "/images/gcon/5.png",
+        "/images/gcon/6.png",
       ],
     },
     {
       id: 4,
       title: "관제 서비스",
       description: "사회적 약자 실종 및 배회감지를 위한 관제 서비스",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/control/main.jpg",
       tags: ["Frontend", "Vue.js", "Vuetify"],
       link: "https://www.shoeshub.kr/",
       features: [
@@ -114,8 +122,12 @@ export default function ProjectsSection() {
       duration: "2024.10 - 2024.12",
       contribution: "100%",
       screenshots: [
-        "/placeholder.svg?height=400&width=600",
-        "/placeholder.svg?height=400&width=600",
+        "/images/control/1.png",
+        "/images/control/2.png",
+        "/images/control/3.png",
+        "/images/control/4.png",
+        "/images/control/5.png",
+        "/images/control/6.png",
       ],
     },
     {
@@ -134,16 +146,12 @@ export default function ProjectsSection() {
       ],
       duration: "2024.08 - 2024.09",
       contribution: "100%",
-      screenshots: [
-        "/placeholder.svg?height=400&width=600",
-        "/placeholder.svg?height=400&width=600",
-      ],
     },
     {
       id: 6,
       title: "Nawriter",
       description: "AI 기사 자동 생성 프로그램",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/nawriter/main.jpg",
       tags: [
         "Frontend",
         "Next.js",
@@ -163,15 +171,19 @@ export default function ProjectsSection() {
       duration: "2024.05 - 2020.06",
       contribution: "30%",
       screenshots: [
-        "/placeholder.svg?height=400&width=600",
-        "/placeholder.svg?height=400&width=600",
+        "/images/nawriter/1.png",
+        "/images/nawriter/2.png",
+        "/images/nawriter/3.png",
+        "/images/nawriter/4.png",
+        "/images/nawriter/5.png",
+        "/images/nawriter/6.png",
       ],
     },
     {
       id: 7,
       title: "mcnsports",
       description: "자전거 의류 쇼핑몰",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/mcnsports/main.png",
       tags: ["publishing", "html", "CSS", "JavaScript", "jQuery"],
       link: "https://mcnsports.co.kr/",
       features: [
@@ -183,15 +195,21 @@ export default function ProjectsSection() {
       duration: "2021.07 - 2021.09",
       contribution: "100%",
       screenshots: [
-        "/placeholder.svg?height=400&width=600",
-        "/placeholder.svg?height=400&width=600",
+        "/images/mcnsports/1.png",
+        "/images/mcnsports/2.png",
+        "/images/mcnsports/3.png",
+        "/images/mcnsports/4.png",
+        "/images/mcnsports/5.png",
+        "/images/mcnsports/6.png",
+        "/images/mcnsports/7.png",
+        "/images/mcnsports/8.png",
       ],
     },
     {
       id: 8,
       title: "mcnfit",
       description: "남성 스포츠 의류 쇼핑몰",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/mcnfit/main.png",
       tags: ["publishing", "html", "CSS", "JavaScript", "jQuery"],
       link: "https://mcnfit.co.kr/",
       features: [
@@ -202,8 +220,18 @@ export default function ProjectsSection() {
       duration: "2021.10 - 2020.12",
       contribution: "100%",
       screenshots: [
-        "/placeholder.svg?height=400&width=600",
-        "/placeholder.svg?height=400&width=600",
+        "/images/mcnfit/1.png",
+        "/images/mcnfit/2.png",
+        "/images/mcnfit/3.png",
+        "/images/mcnfit/4.png",
+        "/images/mcnfit/5.png",
+        "/images/mcnfit/6.png",
+        "/images/mcnfit/7.png",
+        "/images/mcnfit/8.png",
+        "/images/mcnfit/9.png",
+        "/images/mcnfit/10.png",
+        "/images/mcnfit/11.png",
+        "/images/mcnfit/12.png",
       ],
     },
   ];
@@ -476,18 +504,20 @@ export default function ProjectsSection() {
               </div>
 
               <div>
-                <h3 className="text-lg font-semibold mb-4">스크린샷</h3>
+                {selectedProject.screenshots && (
+                  <h3 className="text-lg font-semibold mb-4">서브 이미지</h3>
+                )}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {selectedProject.screenshots.map((screenshot, index) => (
+                  {selectedProject?.screenshots?.map((screenshot, index) => (
                     <div
                       key={index}
-                      className="relative aspect-video rounded-lg overflow-hidden"
+                      className="relative aspect-video rounded-lg overflow-hidden border border-primary/20"
                     >
                       <Image
                         src={screenshot || "/placeholder.svg"}
                         alt={`${selectedProject.title} screenshot ${index + 1}`}
                         fill
-                        className="object-cover"
+                        className="object-contain"
                       />
                     </div>
                   ))}
