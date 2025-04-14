@@ -3,8 +3,11 @@ import type { Metadata } from "next"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "My App",
-  description: "Created with Next.js",
+  title: "Welcome to My Portfolio",
+  description: "프론트엔드 포트폴리오",
+  icons: {
+    icon: "/favicon.ico",
+  },
 }
 
 export default function RootLayout({
