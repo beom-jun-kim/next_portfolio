@@ -67,7 +67,7 @@ export default function Header() {
       </div>
 
       {isMenuOpen && (
-        <div className="fixed inset-0 z-50 flex flex-col bg-background pt-16 md:hidden">
+        <div className="fixed h-screen inset-0 z-50 flex flex-col bg-background pt-16 md:hidden">
           <Button
             variant="ghost"
             size="icon"
