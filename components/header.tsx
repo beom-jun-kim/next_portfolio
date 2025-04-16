@@ -5,10 +5,14 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { useActiveSection } from "@/hooks/use-active-section";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const sections = ["about", "career", "projects", "skills", "news", "contact"];
+  const activeSection = useActiveSection(sections);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,17 +47,20 @@ export default function Header() {
           Portfolio
         </Link>
         <nav className="hidden md:flex md:gap-6">
-          {["about", "career", "projects", "skills", "news", "contact"].map(
-            (item) => (
-              <button
-                key={item}
-                onClick={() => scrollToSection(item)}
-                className="text-sm font-medium capitalize text-muted-foreground transition-colors hover:text-primary"
-              >
-                {item}
-              </button>
-            )
-          )}
+          {sections.map((item) => (
+            <button
+              key={item}
+              onClick={() => scrollToSection(item)}
+              className={cn(
+                "text-sm font-medium capitalize transition-colors",
+                activeSection === item
+                  ? "text-primary"
+                  : "text-muted-foreground hover:text-primary"
+              )}
+            >
+              {item}
+            </button>
+          ))}
         </nav>
         <Button
           variant="ghost"
@@ -78,17 +85,20 @@ export default function Header() {
             <span className="sr-only">Close menu</span>
           </Button>
           <nav className="flex flex-col items-center gap-4 p-4">
-            {["about", "career", "projects", "skills", "news", "contact"].map(
-              (item) => (
-                <button
-                  key={item}
-                  onClick={() => scrollToSection(item)}
-                  className="w-full py-3 text-center text-lg font-medium capitalize transition-colors hover:text-primary"
-                >
-                  {item}
-                </button>
-              )
-            )}
+            {sections.map((item) => (
+              <button
+                key={item}
+                onClick={() => scrollToSection(item)}
+                className={cn(
+                  "w-full py-3 text-center text-lg font-medium capitalize transition-colors",
+                  activeSection === item
+                    ? "text-primary font-semibold"
+                    : "text-muted-foreground hover:text-primary"
+                )}
+              >
+                {item}
+              </button>
+            ))}
           </nav>
         </div>
       )}
