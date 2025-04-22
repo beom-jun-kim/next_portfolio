@@ -80,7 +80,7 @@ export default function ProjectsSection() {
       title: "G-CON",
       description: "IOT기반 스마트 신발 적용 사회적 약자 지원 서비스",
       image: "/images/gcon/main02.png",
-      tags: ["Frontend", "React Native", "Vue.js"],
+      tags: ["Frontend", "React Native", "Next.js", "Zustand"],
       link: "https://www.smartshoes.kr/",
       features: [
         "위치 추적",
@@ -217,7 +217,7 @@ export default function ProjectsSection() {
         "모바일 지원 (적응형)",
         "크로스브라우징",
       ],
-      duration: "2021.10 - 2020.12",
+      duration: "2021.10 - 2021.12",
       contribution: "100%",
       screenshots: [
         "/images/mcnfit/1.png",
