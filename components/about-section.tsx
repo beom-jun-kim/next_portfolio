@@ -54,9 +54,12 @@ export default function AboutSection() {
             >
               <h3 className="text-2xl font-bold">Who I Am</h3>
               <p className="mt-4 text-muted-foreground">
-                웹 퍼블리싱 기반을 다진 프론트엔드 개발자 입니다 프로젝트의
-                기획부터 유지보수 단계까지 다수 참여한 이력이 있습니다 현재
-                정보처리기사 필기 합격, 실기 준비중입니다
+                웹 퍼블리싱 기반을 다진 프론트엔드 개발자 입니다 다양한
+                프로젝트에서 기획 단계부터 디자인, 개발, 유지보수까지 전 주기에
+                걸쳐 참여하며 실질적인 사용성과 품질을 고려한 개발을
+                경험했습니다. UI 컴포넌트의 모듈화와 재사용성 중심의 구조 설계 ,
+                Git 기반의 버전 관리 및 코드 리뷰, 지속적인 리팩토링과 사용자
+                피드백 반영까지 책임감 있게 수행해왔습니다.
               </p>
               <div className="mt-6 grid grid-cols-2 gap-4">
                 <Card className="border-primary/30">
