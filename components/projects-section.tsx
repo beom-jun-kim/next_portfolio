@@ -46,7 +46,7 @@ export default function ProjectsSection() {
     },
     {
       id: 2,
-      title: "사업계획서 완성 프로그램",
+      title: "BMDS",
       description: "창업 멘토링 및 비즈니스 모델 설계 플랫폼",
       image: "/images/bmds/main.png",
       tags: [
@@ -159,7 +159,7 @@ export default function ProjectsSection() {
         "react-cookie",
         "react-i18next",
       ],
-      link: "http://www.nawriter.co.kr/",
+      link: "#",
       features: [
         "AI 기사 생성",
         "첨부자료 찾기",
