@@ -24,6 +24,7 @@ export default function CareerSection() {
         "TypeScript",
         "Tailwind CSS",
         "AWS S3",
+        "Docker",
         "mongoDB",
         "MySQL",
       ],
