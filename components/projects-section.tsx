@@ -20,10 +20,11 @@ export default function ProjectsSection() {
         "Frontend",
         "Next.js",
         "typescript",
-        "AWS S3",
         "react-data-grid",
         "next-intl",
         "zod",
+        "AWS S3",
+        "Docker",
       ],
       link: "https://soolab.co.kr/",
       features: [
